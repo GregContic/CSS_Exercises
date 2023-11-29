@@ -1,0 +1,49 @@
+.box1 {
+    background-color: red;
+  }
+
+.box2 {
+    background-color: white;
+}
+
+.box3 {
+    background-color: blue;
+}
+
+
+.box1, .box2, .box3{
+    width: 700px;
+    height: 150px;
+    padding: 20px;
+    border: 1px solid black;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.box1f {
+    background-color: red;
+  }
+
+.box2f {
+    background-color: white;
+}
+
+.box3f {
+    background-color: blue;
+}
+
+.mamabox {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+.box1f, .box2f, .box3f{
+    width: 50%;
+    height: 750px;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+} 
