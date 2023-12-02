@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation Bar</title>
+    <style>
+        * {
+                background-color: #E4D6DC;
+            }
+
+            body {
+            font-family: sans-serif;
+            }
+
+            /* Desktop Styles */
+            @media (min-width: 768px) {
+                .container {
+                width: 80%;
+                margin: 0 auto;
+                }
+
+                .header {
+                text-align: center;
+                }
+
+                .header h1 {
+                font-size: 32px;
+                }
+
+                .main {
+                display: flex;
+                }
+
+                .main-image {
+                width: 50%;
+                }
+
+                .main-content {
+                width: 50%;
+                padding: 20px;
+                }
+
+                .main-content h2 {
+                font-size: 24px;
+                }
+
+                .main-content p {
+                font-size: 16px;
+                }
+            }
+
+            /* Mobile Styles */
+            @media (max-width: 767px) {
+                .container {
+                width: 100%;
+                }
+
+                .header {
+                text-align: left;
+                }
+
+                .header h1 {
+                font-size: 24px;
+                }
+
+                .main {
+                display: block;
+                }
+
+                .main-image {
+                width: 100%;
+                margin-bottom: 20px;
+                }
+
+                .main-content {
+                padding: 0;
+                }
+
+                .main-content h2 {
+                font-size: 20px;
+                }
+
+                .main-content p {
+                font-size: 14px;
+                }
+            }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 15px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                display: block;
+                background-color: #fff;
+            }
+
+            .navbar a {
+                display: block;
+                padding: 20px;
+                font-size: 18px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="head">Home</a>
+        <a href="about">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="container">
+        <header class="header" id="head">
+            <h1>Responsive Webpage</h1>
+        </header>
+
+        <main class="main" >
+            <div class="main-image">
+            <img src="https://picsum.photos/200/300" alt="Image">
+            </div>
+
+            <div class="main-content">
+                <h2>Random Images</h2>
+                <p>The image to the left changes each time your refresh the page or whenever you leave and re-enter the webpage.
+                    Check it out and try it for yourself! Fun fact: The estimated size of all images on the internet is to be in the zettabytes, 
+                    which is a unit of measurement equal to one billion terabytes!
+                </p>
+            </div>
+            
+        </main>
+    </div>
+    <div class="about-content" id="about">
+        <h2>About</h2>
+        <p>This is the about section of the webpage. </p>
+    </div>
+</body>
+</html>
