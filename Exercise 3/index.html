@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercise 2: Centering Elements</title>
+        <style>
+        .box {
+            width: 500px;
+            height: 500px;
+            background-color: blue;
+            color: white;
+            float: left;
+            margin: 0 10px;}
+
+        /* Clear floats after the last box */
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;}
+        </style>
+    </head>
+    <body>
+        <div class="clearfix">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+        </div>
+    </body>
+</html>
