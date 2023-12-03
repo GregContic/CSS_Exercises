@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combined Flexbox and CSS Grid Layout</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-color: #f2f2f2;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #fff;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 10px 15px;
+    }
+
+    .main {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      grid-gap: 20px;
+    }
+
+    .sidebar {
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    .sidebar h2 {
+      margin-bottom: 10px;
+    }
+
+    .main-content {
+      padding: 20px;
+    }
+
+    .footer {
+      background-color: #f2f2f2;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>Responsive Webpage</h1>
+  </header>
+
+  <nav class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <main class="main">
+    <aside class="sidebar">
+      <h2>Sidebar</h2>
+      <p>This is the sidebar.</p>
+      <p>The main difference between a sidebar and anything else that is not a sidebar,
+        is that a sidebar is a bar on the side, whereas anything that is not a sidebar
+        is like a sidebar but either not a bar nor on the side.
+      </p>
+    </aside>
+
+    <div class="main-content">
+      <h2>Main Content</h2>
+
+      <p>The color of the invisible light is the absence of all colors, 
+        which is why it is called invisible light, 
+        yet it is still visible to the human eye.</p>
+      <p>People with beards are like people without beards, with beards.</p>
+      <p>There are around 8 billion people on the entire world, 
+        if all the people on the globe were to disappear, there would be 
+        0 billion people on the entire world.
+      </p>
+      <p>
+        It does not matter if your skin color is different to the others,
+        sometimes the color of your skin is often the color the other 
+        people perceive as your skin color, at the end of the day, its night.
+      </p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2023 Harry Gregson pogi Denesia</p>
+  </footer>
+</body>
+</html>

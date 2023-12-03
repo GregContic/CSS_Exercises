@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Layout</title>
+  <style>
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .card {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      margin: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    }
+
+    .card-image {
+      width: 100%;
+      height: 200px;
+      background-image: url('https://picsum.photos/200');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .card-description {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+    .card-link {
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="card-image"></div>
+    <div class="card-content">
+      <h2 class="card-title">This is a card</h2>
+      <p class="card-description">The absense of evidence is in fact not the evidence of absense, as it is incorrect to assume that the two is inversely proportional to each other.</p>
+      <a href="https://www.youtube.com/watch?v=BoKQ6991WL8&ab_channel=Kanskaart" class="card-link">Read More</a>
+    </div>
+  </div>
+</body>
+</html>
